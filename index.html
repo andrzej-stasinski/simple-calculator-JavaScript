@@ -1,0 +1,107 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Calculator</title>
+
+			<style>
+			* {padding: 0; margin: 0;}
+			#container {
+				margin: 0 auto;
+				width: 300px;
+				padding-top: 20px;
+			}
+			#kalkulator {
+				outline: 2px solid gray;
+				margin: 0 auto;
+				width: 220px;
+				padding: 5px;
+				margin-top: 30px;
+			}
+			.text {
+				width:70px;
+				margin: 0;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				font-size: 26px;
+			}
+			#wynik {
+				width: 218px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				font-size: 26px;
+			}
+			button {
+				width: 50px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			</style>
+
+			<script type="text/javascript" src="script.js" />
+		
+			</script>
+
+
+	</head>
+	<body>
+		<div id="container">
+		<h3>Calculator - small simple and useful</h3>
+
+		<form name="kalkulator" id="kalkulator" onsubmit="return false;">
+			
+			<table>
+				<tr>
+					<td colspan="2">
+						<input type="text" class="text" name="skl1">
+						<input type="text" class="text" name="skl2">
+						<input type="text" class="text" name="skl3">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="text" id="wynik" name="wynik">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="wprowadz(1);">1</button>
+						<button onclick="wprowadz(2);">2</button>
+						<button onclick="wprowadz(3);">3</button>
+					</td>
+					<td><button onclick="zn('+');">+</button></td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="wprowadz(4);">4</button>
+						<button onclick="wprowadz(5);">5</button>
+						<button onclick="wprowadz(6);">6</button>
+					</td>
+					<td><button onclick="zn('-');">-</button></td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="wprowadz(7);">7</button>
+						<button onclick="wprowadz(8);">8</button>
+						<button onclick="wprowadz(9);">9</button>
+					</td>
+					<td><button onclick="zn('*');">*</button></td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="cancel();"> C </button>
+						<button onclick="wprowadz(0);"> 0 </button>
+						<button onclick="Wykonaj();"> = </button>
+					</td>
+					<td><button onclick="zn('/');">/</button></td>
+				</tr>											
+			</table>
+		</form>
+		<br><br>
+		<h4>description</h4>
+		<div>you shouldn't click in INPUT, type in buttons</div>
+		</div>
+
+
+	</body>
+</html>
