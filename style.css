@@ -1,0 +1,44 @@
+
+* {padding: 0; margin: 0;}
+#container {
+    margin: 0 auto;
+    width: 300px;
+    padding-top: 20px;
+}
+#kalkulator {
+    outline: 2px solid gray;
+    margin: 0 auto;
+    width: 220px;
+    padding: 5px;
+    margin-top: 30px;
+}
+.text {
+    width:70px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 26px;
+}
+#skl1:focus, #skl2:focus, #skl3:focus {
+    outline: none;
+}
+#wynik {
+    width: 218px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 26px;
+}
+button {
+    width: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+

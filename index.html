@@ -3,46 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Calculator</title>
-
-			<style>
-			* {padding: 0; margin: 0;}
-			#container {
-				margin: 0 auto;
-				width: 300px;
-				padding-top: 20px;
-			}
-			#kalkulator {
-				outline: 2px solid gray;
-				margin: 0 auto;
-				width: 220px;
-				padding: 5px;
-				margin-top: 30px;
-			}
-			.text {
-				width:70px;
-				margin: 0;
-				padding-top: 10px;
-				padding-bottom: 10px;
-				font-size: 26px;
-			}
-			#wynik {
-				width: 218px;
-				padding-top: 10px;
-				padding-bottom: 10px;
-				font-size: 26px;
-			}
-			button {
-				width: 50px;
-				padding-top: 10px;
-				padding-bottom: 10px;
-			}
-			</style>
-
-			<script type="text/javascript" src="script.js" />
-		
-			</script>
-
-
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<div id="container">
@@ -53,9 +14,9 @@
 			<table>
 				<tr>
 					<td colspan="2">
-						<input type="text" class="text" name="skl1">
-						<input type="text" class="text" name="skl2">
-						<input type="text" class="text" name="skl3">
+						<input type="text" class="text" name="skl1" id='skl1'>
+						<input type="text" class="text" name="skl2" id='skl2' placeholder="+,-*,/">
+						<input type="text" class="text" name="skl3" id='skl3' >
 					</td>
 				</tr>
 				<tr>
@@ -94,14 +55,15 @@
 						<button onclick="Wykonaj();"> = </button>
 					</td>
 					<td><button onclick="zn('/');">/</button></td>
+					<button type='submit' disabled style='display: none'></button>
 				</tr>											
 			</table>
 		</form>
 		<br><br>
 		<h4>description</h4>
-		<div>you shouldn't click in INPUT, type in buttons</div>
+		<div>click in buttons</div>
 		</div>
 
-
+		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
